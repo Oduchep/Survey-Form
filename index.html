@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Survey Form </title>
+  <link rel="stylesheet" type="text/css" href="Css/style.css">
+</head>
+<body>
+    <main id="main">
+      <h1 id="title"> Konohagakure Survey Form</h1>
+      <p id="description"> Please fill this form if you have ever used the services of a hidden leaf Ninja.</p>
+      <div id="center">
+      <form id="survey-form">
+        <p><label for="name" id="name-label"> Name:</label></p>
+  <input type="text" required placeholder="Enter name" id="name" name="name"><br>
+        <p><label for="email" id="email-label"> Email:</label></p>
+  <input type="email" required placeholder="Enter email" id="email" name="email"><br>
+        <p><label id="number-label"> Number:</label></p>
+  <input type="number" required placeholder="Enter number" id="number" min="1" max="10" name="number"><br>
+        <p>Choose your most effective clan</p>
+        <select id="dropdown">
+                  <option>Choose an option</option>
+                  <option>Uzumaki</option>
+                  <option>Hyuga</option>
+                  <option>Uchiha</option>
+                  <option>Akimichi</option>
+                </select><br>
+        <p>Please pick a gender of the ninja you were most impressed by</p>
+      <input type="radio" name="gender" value="male" checked> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other<br>
+  <p>Please pick a means by which the ninja(s) arrived at your village</p>      
+      <input type="checkbox" name="vehicle1" value="Bike"> Arrived on a bike<br>
+      <input type="checkbox" name="vehicle2" value="Car"> Arrived in a car<br>
+      <input type="checkbox" name="vehicle1" value="Train"> Arrived in a train<br>
+      <input type="checkbox" name="vehicle2" value="Foot"> Arrived on foot<br>
+        <p>Any comments or suggestions?</p>
+        <textarea rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </div>
+    </main>
+
+</body>
+</html>
